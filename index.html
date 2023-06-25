@@ -16,7 +16,7 @@
 	<img src="tw.png">
 	<img src="gp.png">
 </div>
-<form id="login" class="input-group">
+<form method="post" action="home.html" id="login" class="input-group">
 	<input type="text" class="input-field" placeholder="User Id"required>
 	<input type="text" class="input-field" placeholder="Enter Password" required>
 	<input type="checkbox" class="chech-box"><span>Remember Password</span>
@@ -27,7 +27,7 @@
 		<input type="email"class="input-field" placeholder="Email Id" required>
 	<input type="text" class="input-field" placeholder="Enter Password" required>
 	<input type="checkbox" class="chech-box"><span>I agree to the terms & conditions</span>
-	<button type="submit" class="submit-btn" onclick="auth()">Register</button>
+	<button type="submit" class="submit-btn">Register</button>
 </form>
 </div>
 <script>
@@ -44,20 +44,6 @@
 		x.style.left = "50px";
 		y.style.left = "450px";
 		z.style.left = "0";
-	}
-</script>
-<script>
-	function auth(){
-		var email = document.getElementById("User Id").value
-		var pass = document.getElementById("Enter Password").value
-		if(User Id=="utsabbhusal5@gmail.com" && Enter Password=="Utsabbhu@21"){window.location.assign("home.html");
-		alert("Login Successfully");
-	}
-	else{
-		alert("Invalid Information");
-		return;
-	}
-
 	}
 </script>
 
